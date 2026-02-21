@@ -1,0 +1,2 @@
+import './globals.css';
+ import { Noto_Sans_Arabic } from 'next/font/google'; const noto = Noto_Sans_Arabic({ subsets: ['arabic'] }); export const metadata = { title: 'ألترا داينر | تجربة طعام ذكية', description: 'منصة إدارة وطلب الطعام العصرية' }; export default function RootLayout({ children }: { children: React.ReactNode }) { return ( <html lang='ar' dir='rtl'> <body className={noto.className}>{children}</body> </html> ); }
